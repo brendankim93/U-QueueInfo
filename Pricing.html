@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>U-Queue</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  </head>
+  <body>
+      <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" id="logo"><i class="material-icons">gesture</i>U-Queue</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+              <li><a href="HowItWorks.html">How It Works</a></li>
+              <li><a href="Pricing.html">Pricing</a></li>
+              <li><a href="collapsible.html">Get Started</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+      <div class="container">
+        <div class="row">
+          <div class="section">
+              <h3 class="header center teal-text text-lighten-2">Advantages of Using U-Queue</h3>
+                      <ul>
+                          <h6 class="center-align"><i class="small material-icons">thumb_up</i> No monthly costs when using U-Queue.</h6>
+                          <br>
+                          <h6 class="center-align"><i class="small material-icons">thumb_up</i> No upfront costs for equipment or software.</h6>
+                          <br>
+                          <h6 class="center-align"><i class="small material-icons">thumb_up</i> Full access to application for no extra costs.</h6>
+                      </ul>
+            </div>
+          </div>
+          <h3 class="header center teal-text text-lighten-2">U-Queue Pricing Vs. Other Waitlist Solutions</h3>
+          <canvas id="myChart" width="250" height="100"></canvas>
+        <div class="row">
+          <div class="section">
+              <table class="highlight">
+                  <thead class="teal-text text-lighten-2">
+                    <tr>
+                        <th class="center-align">App Name</th>
+                        <th class="center-align">Up Front Costs</th>
+                        <th class="center-align">Monthly Usage Price</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td class="center-align">Cake by Sysco</td>
+                      <td class="center-align">$199.00</td>
+                      <td class="center-align">$79.99</td>
+                    </tr>
+                    <tr>
+                      <td class="center-align">Tables Ready</td>
+                      <td class="center-align">$0.00</td>
+                      <td class="center-align">$69.99</td>
+                    </tr>
+                    <tr>
+                      <td class="center-align">Waitlist.Me</td>
+                      <td class="center-align">$0.00</td>
+                      <td class="center-align">$19.99</td>
+                    </tr>
+                    <tr>
+                      <td class="center-align">U-Queue</td>
+                      <td class="center-align">$0.00</td>
+                      <td class="center-align">FREE!</td>
+                    </tr>
+                  </tbody>
+                </table>
+           </div>           
+          </div>
+        </div>
+        <br>  
+
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">U-Queue</h5>
+                  <p class="grey-text text-lighten-4">Serving businesses with ease and efficiency through a simplified app.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Navigation</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="HowItWorks.html">How It Works</a></li>
+                    <li><a class="grey-text text-lighten-3" href="Pricing.html">Pricing</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Get Started</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2018 U-Queue
+              <a class="grey-text text-lighten-4 right" href="index.html">Home</a>
+              </div>
+            </div>
+          </footer>
+      
+      <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Cake by Sysco", "Tables Ready", "Waitlist.Me", "U-Queue"],
+                datasets: [{
+                    label: '$ Price Per Month',
+                    data: [79.99, 69.99, 19.99, 0],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+</html>

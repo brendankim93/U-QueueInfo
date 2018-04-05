@@ -1,0 +1,22 @@
+{
+  "name": "u-queueinfo",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendankim93/U-QueueInfo.git"
+  },
+  "author": "brendan kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendankim93/U-QueueInfo/issues"
+  },
+  "homepage": "https://github.com/brendankim93/U-QueueInfo#readme",
+  "dependencies": {
+    "chart.js": "^2.7.2"
+  }
+}
