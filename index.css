@@ -3,7 +3,7 @@
 }
 
 #index-banner {
-    background-image: url("./images/Family_restaurant.png");
+    background-image: url("./images/restaurantpic.jpg");
     background-repeat: no-repeat;
 }
 
@@ -20,5 +20,21 @@
     font-size: 30px;
     padding: 180px;
     color: white;
+}
+
+#nav {
+    background-color: #8fbc8b;;
+}
+
+#footer {
+    background-color: #8fbc8b;
+}
+
+.main-text {
+    color: #ff6347;
+}
+
+.icons {
+    color: #708090;
 }
 
